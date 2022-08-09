@@ -24,6 +24,13 @@ then **inside the container** you can create a project with:
 
 You can use built in Android Studio GUI by typing `studio` on the container terminal.
 
+## TODO
+
+[ ] Rootless container (require non root Flutter instalation Flutter reinstall)
+[ ] Hot reloading not working
+[ ] Tested on plain linux
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
