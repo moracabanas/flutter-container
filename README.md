@@ -22,8 +22,7 @@ then **inside the container** you can create a project with:
 
 ## Extra
 
-You can use built in Android Studio by typing `studio` on the container terminal.
-A graphical interface will open.
+You can use built in Android Studio GUI by typing `studio` on the container terminal.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
