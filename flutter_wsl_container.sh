@@ -6,4 +6,4 @@ docker run --rm -it \
 -v $(pwd)/$1:/build \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
 -v /mnt/wslg:/mnt/wslg \
-albertodeduce/flutter-dev:alpha-1 bash
+albertodeduce/flutter-dev:rootless bash
