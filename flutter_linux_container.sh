@@ -5,6 +5,7 @@ docker run --rm -it \
 -e PULSE_SERVER \
 -v $(pwd)/$1:/flutter/home/projects \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
+-v /etc/localtime:/etc/localtime:ro \
 --cap-add=SYS_ADMIN \
 --device=/dev/kvm \
 --cap-add=SYS_ADMIN \
