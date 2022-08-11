@@ -7,4 +7,4 @@ docker run --rm -it \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
 -v /mnt/wslg:/mnt/wslg \
 --device=/dev/kvm \
-albertodeduce/flutter-dev:rootless bash
+albertodeduce/flutter:rootless bash
