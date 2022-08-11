@@ -26,7 +26,7 @@ You can use built in Android Studio GUI by typing `studio` on the container term
 
 ## TODO
 
-[x] Rootless container
+[x] Rootless container  
 [x] Hot reloading not working (press r to reload while in `flutter run`)  
 [ ] Test image on plain linux  
 [ ] Add android studio basic headless setup  
