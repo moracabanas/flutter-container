@@ -7,4 +7,5 @@ docker run --rm -it \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
 -v /mnt/wslg:/mnt/wslg \
 --device=/dev/kvm \
+--cap-add=SYS_ADMIN \
 albertodeduce/flutter:rootless bash

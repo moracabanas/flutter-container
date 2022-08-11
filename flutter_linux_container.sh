@@ -5,4 +5,5 @@ docker run --rm -it \
 -e PULSE_SERVER \
 -v $(pwd)/$1:/flutter/home/projects \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
+--cap-add=SYS_ADMIN \
 albertodeduce/flutter:rootless bash
