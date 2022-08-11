@@ -17,8 +17,16 @@ You can also run the application on a desktop environment with the appropriate W
 then **inside the container** you can create a project with:
 
 ```bash
-./create_app.sh
+flutter@aa1be5030283:~/projects/$ ./create_app.sh
 ```
+or   
+```bash
+flutter@container:~/projects/$ cd <your-project-path>
+flutter@container:~/projects/$ flutter clean
+flutter@container:~/projects/$ flutter pub get
+flutter@container:~/projects/$ flutter run
+```
+
 
 ## Extra
 
@@ -28,6 +36,7 @@ You can use built in Android Studio GUI by typing `studio` on the container term
 
 [x] Rootless container (require non root Flutter instalation Flutter reinstall)  
 [x] Hot reloading not working (press r to reload while in `flutter run`)  
+[x] Add support for kvm android emulator (requires kvm installed)  
 [ ] Test image on plain linux  
 [ ] Add android studio basic headless setup  
 
