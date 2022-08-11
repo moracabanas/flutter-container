@@ -8,4 +8,5 @@ docker run --rm -it \
 -v /mnt/wslg:/mnt/wslg \
 --device=/dev/kvm \
 --cap-add=SYS_ADMIN \
+--shm-size=2g \
 albertodeduce/flutter:rootless bash

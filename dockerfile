@@ -3,7 +3,8 @@ FROM cirrusci/flutter:3.0.5
 RUN apt update && apt install -y \
     fonts-liberation \
     libgbm1 \
-    xdg-utils
+    xdg-utils \
+    upower
 
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     dpkg -i google-chrome-stable_current_amd64.deb && \
@@ -53,6 +54,12 @@ RUN chown -R 1000:1000 /opt/android-studio && \
 USER $USERNAME
 
 RUN echo "alias studio=/opt/android-studio/bin/studio.sh" >> ~/.bashrc
+# https://github.com/microsoft/WSL/issues/7915#issuecomment-1163333151
+RUN echo "alias google-chrome='google-chrome --disable-dev-shm-usage'" >> ~/.bashrc
+RUN echo "sudo service dbus start" >> ~/.bashrc
+# don't forget to scape $ with single quotes
+RUN echo 'export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/bus' >> ~/.bashrc
+RUN echo 'dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus --nofork --nopidfile --syslog-only &' >> ~/.bashrc
 
 WORKDIR /home/flutter/projects
 
