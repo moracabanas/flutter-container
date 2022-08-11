@@ -34,7 +34,7 @@ You can use built in Android Studio GUI by typing `studio` on the container term
 
 ## TODO
 
-[x] Rootless container (require non root Flutter instalation Flutter reinstall)  
+[x] Rootless container  
 [x] Hot reloading not working (press r to reload while in `flutter run`)  
 [x] Add support for kvm android emulator (requires kvm installed)  
 [ ] Test image on plain linux  
